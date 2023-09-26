@@ -1,0 +1,141 @@
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #ffc3e88e;
+        color: #333;
+    }
+    .card {
+        max-width: 400px;
+        margin: 50px auto;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background-color: #fff;
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        /* background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722); */
+    }
+    .test {
+        /* background-color: red; */
+    }
+    .test p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .signature {
+        margin-top: 20px;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+        background-image: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #ff5722);
+        background-clip: text; 
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .mySlides {
+        display: none;
+    }
+    .fade {
+        animation: fade 5s linear infinite;
+    }
+
+    .mySlides.fade img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5%;
+        aspect-ratio: 1 / 1.2;
+        object-position: center;
+        object-fit: cover;
+    }
+    
+    @keyframes fade {
+        0%, 100% {
+            opacity: 0;
+        }
+        20%, 80% {
+            opacity: 1;
+        }
+    }
+    /* เพิ่ม background ให้กับ class "birthday-heading" */
+    .birthday-heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+    animation: bounce 2s infinite;
+    background-color: #ff3e7ed5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* สร้าง animation ใหม่ชื่อว่า "bounce" */
+    @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+    }
+    .card-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    }
+
+    .bylion {
+    font-size: 11px;
+    /* line-height: 1.6; */
+    background-color: #ff0011;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    }
+    .background-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background-image: url('https://cdn.discordapp.com/attachments/732556321169342517/1138101477538271243/IMG_4376.jpg'); /* แทนที่ 'your-image-url.jpg' ด้วย URL ของรูปภาพที่ต้องการใช้ */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px); 
+
+    }
+
+
+    .flowers {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .flowers img {
+        max-width: 60px;
+        height: auto;
+        margin: 0 10px;
+        animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
